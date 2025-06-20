@@ -8,14 +8,17 @@ Latest code is here:
 
 https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/check_vrops_status.yml
 
-I'm getting an error that it doesn't see any json in the output.
+Original code from the blog post with my environment credentials (don't worry, these only work in my lab):
 
 ![OriginalCode](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/original%20code.png)
 
-It seems that for some reason, I'm not being able to access the actual token in the json body, just the headers.
+
+I'm getting an error that it doesn't see any json in the output of the auth request, which can be seen as the debug before the error occurs. Actual error is "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'json'. "
+
+It seems that for some reason, I'm not being able to access the actual token in the json body, I'm only registering the headers.
 
 ![playbookRun](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/original%20ansible%20playbook.png)
 
-When I try on the Swagger API interface the Ops instance brings, I can see the body and the headers. How do I access the token in the body inside the ansible playbook?
+When I try on the Swagger API interface the Ops instance brings, I can see the body and the headers in separate response sections. How do I access the token in the body inside the ansible playbook?
 
 ![APIswagger](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/ops%20swagger%20api%20interface%20showing%20body.png)
