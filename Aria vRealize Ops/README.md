@@ -4,6 +4,10 @@ https://www.nicktailor.com/?p=1888
 
 (You will see I've tried to simplify it, removing some lines and options, but it doesn't seem to do any effect).
 
+Latest code is here:
+
+https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/check_vrops_status.yml
+
 I'm getting an error that it doesn't see any json in the output.
 
 ![OriginalCode](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/original%20code.png)
