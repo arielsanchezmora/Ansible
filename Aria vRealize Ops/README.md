@@ -8,6 +8,8 @@ Latest code is here:
 
 https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/check_vrops_status.yml
 
+![WorkingRun](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/working%20code%20output.png)
+
 
 Old issue:
 
