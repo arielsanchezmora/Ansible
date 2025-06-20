@@ -6,7 +6,7 @@ https://www.nicktailor.com/?p=1888
 
 I'm getting an error that it doesn't see any json in the output.
 
-![OriginalCode](original code.png)
+![OriginalCode](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/original%20code.png)
 
 It seems that for some reason, I'm not being able to access the actual token in the json body, just the headers.
 
