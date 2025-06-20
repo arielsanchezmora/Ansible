@@ -10,8 +10,17 @@ https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/chec
 
 ![WorkingRun](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/working%20code%20output.png)
 
+With lots of thanks to @brockpeterson @wmilliron and @dkaber
 
-Old issue:
+
+
+
+
+
+
+
+
+Old issue if you are interested in what didn't work:
 
 Original code from the blog post with my environment credentials (don't worry, these only work in my lab):
 
