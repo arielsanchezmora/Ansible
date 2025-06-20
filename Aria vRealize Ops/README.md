@@ -1,12 +1,15 @@
-I'm trying to get this code to work
+I was trying to get this code to work
 
 https://www.nicktailor.com/?p=1888
 
-(You will see I've tried to simplify it, removing some lines and options, but it doesn't seem to do any effect).
+Turns out I had to change it quite a bit with the latest version of Ansible and vRealize/Aria/VCF Operations, but now I can login and save the authentication token, and use to call another API endpoint!
 
 Latest code is here:
 
 https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/check_vrops_status.yml
+
+
+Old issue:
 
 Original code from the blog post with my environment credentials (don't worry, these only work in my lab):
 
