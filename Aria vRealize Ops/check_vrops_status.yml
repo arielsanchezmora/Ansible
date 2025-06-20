@@ -1,0 +1,52 @@
+---
+- name: Authenticate with vROps and Check vROps Status
+  hosts: localhost
+
+  tasks:
+
+    - name: Authenticate with vROps
+      uri:
+        url: "https://vrealizeops.ariel.lab/suite-api/api/auth/token/acquire"
+        method: POST
+        body_format: json
+        body:
+          username: "admin"
+          password: "VMware1!"
+        headers:
+          Content-Type: "application/json"
+          Accept: "application/json"
+        validate_certs: no
+        return_content: true
+      register: auth_response
+
+    - name: Fail if authentication failed
+      fail:
+        msg: "Authentication with vROps failed: {{ auth_response }}"
+      when: auth_response.status != 200
+
+    - name: Debug auth_response
+      debug:
+        msg: "The auth_response is {{auth_response.content}}"
+
+    - name: Set auth token as fact
+      set_fact:
+        auth_token: "{{auth_response.json.token }}"
+
+    - name: Debug auth_token
+      debug:
+        msg: "The auth_token is {{auth_token}}"
+
+
+    - name: Get vROps status
+      uri:
+        url: "https://vrealizeops.ariel.lab/suite-api/api/resources"
+        method: GET
+        headers:
+          Authorization: "OpsToken {{ auth_token }}"
+          Content-Type: "application/json"
+        validate_certs: no
+      register: vrops_response
+
+    - name: Display vROps status
+      debug:
+        msg: "vROps response: {{ vrops_response }}"
