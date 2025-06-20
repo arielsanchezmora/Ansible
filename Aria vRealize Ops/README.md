@@ -10,7 +10,7 @@ https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/chec
 
 ![WorkingRun](https://github.com/arielsanchezmora/Ansible/blob/main/Aria%20vRealize%20Ops/working%20code%20output.png)
 
-With lots of thanks to @brockpeterson @wmilliron and [@dkaber](https://github.com/dkaber)
+With lots of thanks to [@brockpeterson](https://github.com/brockpeterson) [@wmilliron](https://github.com/wmilliron) and [@dkaber](https://github.com/dkaber)
 
 
 
